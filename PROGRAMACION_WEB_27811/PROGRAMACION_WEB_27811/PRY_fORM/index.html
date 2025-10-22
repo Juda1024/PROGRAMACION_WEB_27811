@@ -27,10 +27,27 @@
             <input type="date" id="fecha" name="fechanacimiento" placeholder="23/06/2000" value="2025-10-20" max="2026-10-21" min="2020-10-21"><br><br>
 
             <label for="sexo">Sexo:</label>
-            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <input type="radio" id="masculino" name="sexo" value="masculino" checked>
             <label for="masculino">Masculino</label>
             <input type="radio" id="femenino" name="sexo" value="femenino">
             <label for="femenino">Femenino</label><br><br>
+
+            <label for="">Seleccione sus dias de clase de progra web</label>
+            <label for="lunes">Lunes</label>
+            <imput type="checkbox" id="lunes" name="dias" value="lunes">
+            <label for="miercoles">Miércoles</label>
+            <imput type="checkbox" id="miercoles" name="dias" value="miercoles">
+            <label for="viernes">Viernes</label><br><br>
+            <imput type="checkbox" id="viernes" name="dias" value="viernes">
+
+            <label for="foto">Suba su foto</label>
+            <input type="file" id="foto" name="foto" accept=".png,.jpg"><br><br>
+
+            <label for="color">Seleccione su color favorito:</label>
+            <input type="color" id="color" name="color" value="#0000ff"><br><br>
+
+            <label for="estatura">Estatura (mts):</label>
+            <input type="range" id="estatura" name="estatura" min="1.00" max="2.50" step="0.01" value="1.75"><br><br>
 
             <input type="submit" value="Enviar">
             <input type="reset" value="Borrar">
