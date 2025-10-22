@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCCION A LOS FORMULARIOS</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de datos de una persona</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Ejm: Grijalva" maxlength="7" minlength="2"><br><br>
+
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" placeholder="Ejm: Juda" maxlength="7" minlength="2"><br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="5" max="75" placeholder="20"><br><br>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="jbgrijalva@espe.edu.ec"><br><br>
+
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fechanacimiento" placeholder="23/06/2000" value="2025-10-20" max="2026-10-21" min="2020-10-21"><br><br>
+
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="sexo" value="femenino">
+            <label for="femenino">Femenino</label><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
