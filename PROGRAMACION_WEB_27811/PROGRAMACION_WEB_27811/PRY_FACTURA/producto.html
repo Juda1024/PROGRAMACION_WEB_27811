@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        DATOS Producto
+    </title>
+</head>
+<body>
+    <header>
+        <center>
+            <figure>
+                <img src="https://img.freepik.com/vector-premium/diseno-plantilla-logotipo-tienda-computadora-escritorio_316488-1458.jpg" alt="Logo de la Empresa" width="100">
+                <figcaption>Mi Empresa S.A.</figcaption>
+            </figure>
+
+            <h1> DATOS-PRODUCTO</h1>
+        </center>
+    </header>
+    
+    <main>
+        <center>
+            <form action="imprimir_factura.html" method="get">
+                <table border="1" cellpadding="8"> 
+                    <tr>
+                        <th colspan="2">Información del Producto</th>
+                    </tr>
+                    <tr>   
+                        <td> <label for="producto">NOMBRE DEL PRODUCTO: </label>
+                        </td>
+                        <td>
+                            <input 
+                                type="text"
+                                name="producto"
+                                id="producto"
+                                placeholder="Laptop..."
+                                required
+                            >   
+                        </td>
+                    </tr>
+                    <tr>   
+                        <td> <label for="cantidad">CANTIDAD: </label>
+                        </td>
+                        <td>
+                            <input 
+                                type="number"
+                                name="cantidad"
+                                id="cantidad"
+                                placeholder="1"
+                                min="1"
+                                required
+                            >   
+                        </td>
+                    </tr>
+                    <tr>   
+                        <td> <label for="precio">PRECIO:</label>
+                        </td>
+                        <td>
+                            <input 
+                                type="number"
+                                name="precio"
+                                id="precio"
+                                placeholder="100"
+                                min="1"
+                                step="0.01"
+                                required
+                            >   
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <input type="submit" value="Siguiente: Ver Factura" id="submit">
+                        </td>
+                        <td align="center">
+                            <input type="reset" value="Vaciar">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </main>
+
+    <hr>
+    
+    <footer>
+        <center>
+            <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
+        </center>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Satisfacción</title>
+</head>
+<body>
+
+    <header>
+        <center>
+            <figure>
+                <img src="https://img.freepik.com/vector-premium/diseno-plantilla-logotipo-tienda-computadora-escritorio_316488-1458.jpg" alt="Logo de la Empresa" width="100">
+                <figcaption>Mi Empresa S.A.</figcaption>
+            </figure>
+
+            <h2>Encuesta de Satisfacción</h2>
+            <p>¡Gracias por su compra! Por favor, valórenos.</p>
+        </center>
+    </header>
+
+    <main>
+        <center>
+            <form action="cliente.html" method="get">
+            
+                <table border="3" width="50%" style="margin-top:20px;">
+                    <thead>
+                        <tr>
+                            <th colspan="6">Valore de 1 (Malo) a 5 (Excelente)</th>
+                        </tr>
+                    </thead>
+                
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                
+                    <tr>
+                        <th>Atención del personal</th>
+                        <td><input type="radio" name="q_atencion" value="1" required></td>
+                        <td><input type="radio" name="q_atencion" value="2"></td>
+                        <td><input type="radio" name="q_atencion" value="3"></td>
+                        <td><input type="radio" name="q_atencion" value="4"></td>
+                        <td><input type="radio" name="q_atencion" value="5"></td>
+                    </tr>
+                
+                    <tr>
+                        <th>Calidad del producto</th>
+                        <td><input type="radio" name="q_calidad" value="1" required></td>
+                        <td><input type="radio" name="q_calidad" value="2"></td>
+                        <td><input type="radio" name="q_calidad" value="3"></td>
+                        <td><input type="radio" name="q_calidad" value="4"></td>
+                        <td><input type="radio" name="q_calidad" value="5"></td>
+                    </tr>
+                
+                    <tr>
+                        <th>Precio / Valor</th>
+                        <td><input type="radio" name="q_precio" value="1" required></td>
+                        <td><input type="radio" name="q_precio" value="2"></td>
+                        <td><input type="radio" name="q_precio" value="3"></td>
+                        <td><input type="radio" name="q_precio" value="4"></td>
+                        <td><input type="radio" name="q_precio" value="5"></td>
+                    </tr>
+                
+                    <tr>
+                        <th colspan="2"><label for="enc_satisfaccion">Satisfacción (0–10):</label></th>
+                        <td colspan="4">
+                            <input type="range" id="enc_satisfaccion" min="0" max="10" value="8"
+                                   oninput="this.nextElementSibling.value = this.value">
+                            <output>8</output>
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <th colspan="2">Información del cliente</th>
+                        <td colspan="4">
+                            <input type="checkbox" id="promos" value="promos">
+                            <label for="promos">Deseo recibir promociones</label><br>
+                            <input type="checkbox" id="autorizo" value="autorizo" checked>
+                            <label for="autorizo">Autorizo uso de mis datos personales</label>
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td colspan="6" style="text-align:center;">
+                            <input type="submit" value="Crear otro formulario">
+                            <input type="reset" value="Borrar">
+                        </td>
+                    </tr>
+                </table>
+                </form>
+        </center>
+    </main>
+    
+    <hr>
+    
+    <footer>
+        <center>
+            <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
+        </center>
+    </footer>
+
+</body>
+</html>
