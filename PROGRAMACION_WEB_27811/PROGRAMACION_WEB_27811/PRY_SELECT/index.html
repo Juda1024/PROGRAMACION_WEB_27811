@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT</title>
+</head>
+<body>
+    <header>
+        <h1>SELECT en formulario</h1> 
+    </header>
+    <main>
+        <form action="server.html" method="get">
+            <!--selct para form-->
+            <fieldset>
+                <label for="lenguaje_programacion">Seleccione su lenguaje favorito de programacion favorito:</label>
+                <select name="lenguaje_programacion" id="lenguaje_programacion">
+                    <option value="c_mas_mas">C++</option>
+                    <option value="phyton">Phyton</option>
+                    <option value="java_script">Java Script</option>
+                    <option value="java">Java</option>
+                    <option value="c_sharp" disabled>C#</option>
+                </select>
+
+                <input type="date">
+            </fieldset>
+            <br>
+            <label for="musica_favorita">Seleccione su musica favorita</label>
+            <select name="musica_favorita[]" id="musica_favorita" multiple required size="2" autofocus>
+                <optgroup label="Generos Musicales" title="Generos Musicales">
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="regueton" selected>Regueton</option>
+                    <option value="clasica" disabled>Clasica</option>
+                </optgroup>
+                <optgroup label="Generos extranjeros" disabled>
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="regueton" selected>Regueton</option>
+                    <option value="clasica" disabled>Clasica</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="frase_motivadora">Ingrese su frase del dia de hoy</label>
+            <textarea name="frase_motivadora" id="frase_motivadora" cols="10" rows="2" required>Buenos dias senior sol</textarea>
+            <br>
+            <input type="hidden" name="cedula_usuario" value="1728394650">
+
+            <br>
+            <button type="submit">Enviar al servidor</button>
+        </form>
+
+        <h2>Actividad en clase: Registrar estudiante en una carrera</h2>
+        <form action="server.html" method="get">
+            <fieldset>
+                <legend>Datos personales del estudiante</legend>
+                <label for="CI">Ingrese su numero de cedula</label>
+                <input type="number" name="CI" id="CI" required max="9999999999" min="1000000000" placeholder="Ej: 1728394650" pattern="[0-9]{10}">
+                <br>
+                <label for="fecha_nacimiento">Ingrese su fecha de nacimiento</label>
+                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" value="2005-10-28" min="2005-10-27" max="2010-10-27" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Materias a registrar</legend>
+                <label for="materias">Seleccione las materias que quiere registrar este semestre</label>
+                <select name="materias[]" id="materias" multiple size="3"  required>
+                    <option value="calculo_diferencial"selected>Calculo Diferencial</option>
+                    <option value="algebra_lineal" selected>Algebra Lineal</option>
+                    <option value="programacion_web" selected>Programacion Web</option>
+                    <option value="base_de_datos" selected>Base de Datos</option>
+                    <option value="fisica" selected>Fisica</option>
+                    <option value="quimica" disabled>Quimica</option>
+                </select>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Otros</legend>
+                <label for="hoja_vida">Adjunte su hoja de vida</label>
+                <input type="file" name="hoja_vida" id="hoja_vida" accept=".pdf">
+                <br>
+                <br>
+                <label for="generar_id">Generar ID de estudiante</label>
+                <input type="text" name="generar_id" id="generar_id" pattern="[A-Z]{3}[1-5]{5}" placeholder="Ej: LMU12345" required >
+            </fieldset> 
+            <br>
+            <br>
+            <button type="submit">Enviar al servidor</button>
+        </form> 
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
